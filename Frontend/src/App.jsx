@@ -38,7 +38,7 @@ function App() {
     setIsLoading(true);
     setReview('');
     try {
-      const response = await axios.post('https://complexity-analyzer-backend.onrender.com/ai/get-review', { code });
+      const response = await axios.post('https://complexity-analysis-1.onrender.com', { code });
       setReview(response.data);
     } catch (error) {
       console.error("Error during code review:", error);
